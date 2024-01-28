@@ -9,7 +9,7 @@ import AlertMessage from '../icons/AlertMessage';
 const RegistrerBasicInfo = () => {
   const navigate = useNavigate();
   const { DataRegistrer } = useContext(Context);
-  console.log(DataRegistrer);
+  
   const { setDataRegistrer } = useContext(Context);
 
   const [isLoading, setIsLoading] = useState(false);

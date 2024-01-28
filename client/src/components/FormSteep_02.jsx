@@ -9,7 +9,7 @@ import { validateAddress, validateCity, validateNationality, validatePhone } fro
 const RegistrerLocationInfo = () => {
   const navigate = useNavigate();
   const { DataRegistrer } = useContext(Context);
-  console.log(DataRegistrer);
+  
   const { setDataRegistrer } = useContext(Context);
 
   const [isLoading, setIsLoading] = useState(false);
@@ -72,7 +72,7 @@ const RegistrerLocationInfo = () => {
       ...RegistrerModified,
     });
     setIsLoading(false);
-    navigate('/steep_01');
+    navigate('/');
   }
 
   return (
@@ -84,7 +84,7 @@ const RegistrerLocationInfo = () => {
               Registrar Usuario
             </h1>
             <p className="text-gray-500 dark:text-gray-400 text-center">
-              Ingrese los datos básicos del usuario
+              Ingrese los datos de ubicación del usuario
             </p>
             {isLoading ? (
               <div className="flex w-full pb-8 justify-center items-center">

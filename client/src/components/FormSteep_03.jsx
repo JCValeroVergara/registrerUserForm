@@ -175,7 +175,7 @@ const RegistrerFamilyInfo = () => {
                     id="sons"
                     title="Tienes Hijos?"
                     className="h-10 border border-black sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 placeholder-gray-400 dark:text-gray-400 focus:ring-blue-500 focus:border-blue-500"
-                    placeholder="Tienes Hijos?"
+                    placeholder="Hijos?"
                     required=""
                     defaultValue={
                       DataRegistrer.sons ? DataRegistrer.sons : selectedSons
